@@ -25,18 +25,31 @@
     background-color: rgb(132, 43, 216,0.5);
 }
 .ann-grid{
-    display: flex;
+    display: grid;
+     gap: 16px;
+
 }
 .ann-card{
-    border: 2px black solid;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    display: flex;
-    flex-direction: column;
-    width: 30%;
-    background-color: #23723d;
-
-
+   width: 95%;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande';
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  background-color: #23723d;
+  overflow: hidden;
+  gap: 10px;
+  padding: 5px;
+  border-radius: 12px;margin-top: 20px;
+  transition: all 0.2s ease-in;
 }
 .ann-card a{
-    text-decoration: none;border: 1px solid black;border-radius: 20%;padding: 4px 4px;
+    text-decoration: none;
+}
+.ann-card *{
+    background-color:#17e45b;
+}
+.ann-card:hover{
+    transform: translateY(+4px);
+    background-color: #5cbd7c;
+    border: #cee4d5 2px solid;
 }

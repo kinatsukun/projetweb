@@ -3,16 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Center de formation</title>
+    <title>Centre de formation</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/headerfooter.css">
 </head>
 <body>
     <header>
-        <h1>Center de formation</h1>
+        <h1>Centre de formation</h1>
         <nav class="navbar">
             
                 <a href="index.html">Accueil</a>
-                <a href="formation.html">formation</a>
+                <div href="#" class ="dropdown">
+                    <a href="formation.html" class="dropbtn">Formations  &#9660;</a>
+                    <div class="dropdown-content">
+                       <a id="dev-web" href="formation.html#dev-web">Développement Web</a>
+                       <a id="marketing" href="formation.html#marketing">Marketing Digital</a>
+                       <a id="design" href="formation.html#design">Design Graphique</a>
+                       <a id="data" href="formation.html#data">Data Science</a>
+                       <a id="langues" href="formation.html#langues">Langues Étrangères</a>
+        </div>
+            </div>
                 <a href="annonces.html">annonces</a>
                 <a href="contact.html">Contact</a>
            
@@ -25,15 +35,15 @@
    <div id="slide">
     <div class="image-button">
    <img src="imgs/img3.webp" alt="Description">
-    <a href="#" class="btn">Formation</a>
+    <a href="formation.html" class="btn">Formation</a>
    </div> 
     <div class="image-button">
    <img src="imgs/img1.webp" alt="Description">
-    <a href="#" class="btn">Annonces</a>
+    <a href="annonces.html" class="btn">Annonces</a>
    </div>
     <div class="image-button">
    <img src="imgs/img2.webp" alt="Description">
-    <a href="#" class="btn">Contact</a>
+    <a href="contact.html" class="btn">Contact</a>
    </div>
 </div>
 <section class="statistique">
@@ -43,7 +53,7 @@
         <div class="s s1"><strong class="titre t1">Nombre d'étudiants inscrits :</strong><div class="nombre n1"> 500+</div></div>
         <div class=" s s2"><strong class="titre t2">Taux de réussite :</strong><div class="nombre n2"> 95%</div></div>
         <div class="s s3"><strong class="titre t3">Partenaires professionnels :</strong><div class="nombre n3"> 50+</div></div>
-        <div class="s s4"><strong class="titre t4">Nombre de formations proposées :</strong> <div class="nombre n4">10+</div></div>
+        <div class="s s4"><strong class="titre t4">Nombre de formations proposées :</strong> <div class="nombre n4">5+</div></div>
     </div>
 </section>
     <footer>
@@ -69,6 +79,8 @@
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2026 CentreForm - Tous droits réservés</p>
+            <p>&copy; 2026 CentredeFormation  - Tous droits réservés</p>
         </div>
     </footer>
+</body>
+</html>

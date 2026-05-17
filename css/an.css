@@ -1,0 +1,42 @@
+.head-page{
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 2rem 3rem;
+}
+.head-page h1{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;margin: 1px;font-weight: 700;font-size: 35px;
+}
+.head-page p{
+    font-size: 19px;
+}
+.searchbar{
+    width: 100%;background-color: aqua;color: rgb(189, 25, 25);padding: 8px 16px;
+    font-size: 15px;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;border: solid rgb(37, 50, 238) 1px;
+}
+.filters{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+.fltrbtn{
+    border-radius: 15px;padding: 5px;background-color: blueviolet;transition: all 0.23s ease-in;margin-top: 10px;border: 2px solid rgb(36, 9, 153);
+}
+.fltrbtn:hover{
+    background-color: rgb(132, 43, 216,0.5);
+}
+.ann-grid{
+    display: flex;
+}
+.ann-card{
+    border: 2px black solid;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    background-color: #23723d;
+
+
+}
+.ann-card a{
+    text-decoration: none;border: 1px solid black;border-radius: 20%;padding: 4px 4px;
+}

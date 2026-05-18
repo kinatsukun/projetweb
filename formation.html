@@ -3,12 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Center de formation</title>
+    <title>Centre de formation</title>
     <link rel="stylesheet" href="css/style.css">
+     <link rel="stylesheet" href="css/headerfooter.css">
+     <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const formationHeaders = document.querySelectorAll('.formation-header');
+            formationHeaders.forEach(header => {
+                header.addEventListener('click', function() {
+                    const content = this.querySelector('.contenu-formation');
+                    const flechBtn = this.querySelector('.flech-btn');
+                    if (content.style.display === 'block') {
+                        content.style.display = 'none';
+                        flechBtn.style.transform = 'rotate(0deg)';
+                        flechBtn.style.transition = '0.3s ease';
+                    } else {
+                        content.style.display = 'block';
+                        flechBtn.style.transform = 'rotate(180deg)';
+                        flechBtn.style.transition = '0.3s ease';
+                    }
+                });
+            });
+        });
+     </script>
 </head>
 <body>
    <header>
-        <h1>Center de formation</h1>
+        <h1>Centre de formation</h1>
         <nav class="navbar">
             
                 <a href="index.html">Accueil</a>
@@ -37,7 +58,7 @@
           <h2 href="#"  class="title" >Développement Web <span id="btn" class="flech-btn "> &#128317;</span></h2>
         
            <p class="description">Devenez développeur full-stack capable de créer des sites et applications web complets, du frontend au backend.</p>
-              <ul class="contenu-formation" for="btn" >
+              <ul class="contenu-formation"  for="dev-web">
         <li><strong>HTML</strong> — Langage de balisage pour structurer le contenu des pages web.</li>
         <li><strong>CSS</strong> — Langage de style pour concevoir l'apparence visuelle des sites.</li>
         <li><strong>JavaScript</strong> — Langage de programmation pour rendre les pages interactives et dynamiques.</li>
@@ -149,7 +170,7 @@
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2026 CentreForm - Tous droits réservés</p>
+            <p>&copy; 2026 CentredeFormation  - Tous droits réservés</p>
         </div>
     </footer>
 </body>

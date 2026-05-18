@@ -51,6 +51,8 @@ body{
     justify-content: center;
     flex-direction: column;
     width:100%;
+    margin: 0;
+    padding: 0;
 }
 .navbar a:hover {
     background-color: rgba(111, 229, 253, 0.9);
@@ -61,6 +63,8 @@ body{
     grid-template-rows: 6,1fr;
     gap: 11px;
     width: 100%;
+    margin-left: 30%;
+    
 }
 .div1 {
     grid-column: span 2 / span 2;
@@ -71,6 +75,8 @@ body{
     display: flex;
     flex-direction: column;
     padding: 0 20px;
+    justify-content: center;
+    
 }
 .div2 *{
     background-color: aqua;
@@ -80,7 +86,7 @@ body{
     grid-row: span 6 / span 6;
     grid-column-start: 3;
     background-color: aqua;
-    height:500px;
+    height:auto;
     margin-right: 2.5%;
     border-radius: 20px;
     display: flex;
@@ -88,6 +94,7 @@ body{
     margin: 10px;
     width: 500px;
     padding: 0 20px;
+    justify-content: center;
 }
 label{
     background-color: turquoise;
@@ -95,3 +102,110 @@ label{
 .div1 h4{
     background-color: turquoise;
 }
+.input{
+    background-color: aliceblue;
+    width: 200px;
+}
+.gender{
+    display: flex;gap: 1rem;
+    background-color: turquoise;
+    margin-bottom: 12px;
+}
+textarea{
+   
+    font-family: sans-serif;
+    padding: 10px;
+    background-color: #2c3e50;
+    border-radius: 10px;
+}
+textarea:focus{
+    border: solid gray 5px;
+    box-shadow: 1px 1px 2px;
+}
+label{
+    font-size: larger;font-family: monospace;margin: 7px;
+}
+.name{
+    height: 50px;
+    background-color: #2c3e50;
+    border-radius: 10px;
+}
+button{
+    border-radius: 10px;
+    height: 35px;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    background-color: #2c3e50;
+    color: black;
+    font-size: larger;
+}
+footer {
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    margin-top: 20px;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: #2c3e50;
+    font-size: 16px;
+    
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 200px;
+     background-color: #2c3e50;
+}
+.footer-section h3 {
+    color: #3498db;
+    margin-bottom: 15px;
+    font-size: 1.2em;
+     background-color: #2c3e50;
+}
+
+.footer-section p,
+.footer-section ul {
+    color: #bdc3c7;
+    font-size: 0.95em;
+     background-color: #2c3e50;
+}
+
+.footer-section ul {
+    list-style: none;
+     background-color: #2c3e50;
+}
+
+.footer-section ul li {
+    margin-bottom: 8px;
+     background-color: #2c3e50;
+}
+
+.footer-section a {
+    color: #bdc3c7;
+    text-decoration: none;
+    transition: color 0.3s;
+    background-color: #2c3e50;
+     
+}
+.footer-section a:hover {
+    color: #3498db;
+    font-size: 18px;
+    transition: transform 0.3s ease;
+}
+
+.footer-bottom p{
+    text-align: center;
+    padding: 20px;
+    background-color: #1a252f;
+    color: #95a5a6;
+    font-size: 0.9em;
+
+}    

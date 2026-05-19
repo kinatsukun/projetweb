@@ -10,8 +10,8 @@
     font-size: 19px;
 }
 .searchbar{
-    width: 70%;background-color: aqua;color: rgb(189, 25, 25);padding: 8px 16px;
-    font-size: 15px;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;border: solid rgb(37, 50, 238) 1px;
+    width: 70%;background-color: rgb(58, 107, 107);color: rgb(189, 25, 25);padding: 8px 16px;
+    font-size: 15px;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;border: solid rgb(157, 161, 212) 1px;
 margin-left: 15%;margin-right: 15%;transition: ease-in 0.2s;
 }
 .searchbar:focus{
@@ -25,11 +25,13 @@ margin-left: 15%;margin-right: 15%;transition: ease-in 0.2s;
     gap: 15px;
     margin-top: 5px;
     margin-bottom: 5px;
-    margin-left: 15%;margin-right: 15%;
-    padding:12px;
+    margin-left: 25%;margin-right: 15%;
+    padding:12px;height: 80px;width: 80px;
+    font-size: 24px;
 }
 .fltrbtn{
-    border-radius: 15px;padding: 5px;background-color: rgb(43, 220, 226);transition: all 0.23s ease-in;margin-top: 10px;border: 2px solid rgb(36, 9, 153);
+    border-radius: 15px;padding: 5px;background-color: rgb(102, 166, 169);transition: all 0.23s ease-in;margin-top: 10px;border: 2px solid rgb(36, 9, 153);
+    
 }
 .fltrbtn:hover{
     background-color: rgba(43, 190, 216, 0.5);
@@ -45,7 +47,7 @@ margin-left: 15%;margin-right: 15%;transition: ease-in 0.2s;
   display: flex;
   flex-direction: column;
   min-width: 0;
-  background-color: #23723d;
+  background-color: rgb(102, 166, 169);
   overflow: hidden;
   gap: 10px;
   padding: 5px;
@@ -57,7 +59,7 @@ margin-left: 15%;margin-right: 15%;transition: ease-in 0.2s;
     text-decoration: none;
 }
 .ann-card *{
-  background-color: #23723d;
+  background-color: rgb(102, 166, 169);
     
 }
 .ann-card:hover{

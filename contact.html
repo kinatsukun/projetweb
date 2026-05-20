@@ -10,29 +10,12 @@
 </head>
 <body>
       <header>
-    <title>Centre de formation</title>
-    <link rel="stylesheet" href="css/headerfooter.css">
-    <link rel="stylesheet" href="css/contact.css">
-</head>
-<body>
-    <header>
         <h1>Centre de formation</h1>
         <nav class="navbar">
             
                 <a href="index.html">Accueil</a>
                 <a href="formation.html">Formations</a>
                 <a href="annonces.html">Annonces</a>
-                <div href="#" class ="dropdown">
-                    <a href="formation.html" class="dropbtn">Formations  &#9660;</a>
-                    <div class="dropdown-content">
-                       <a id="dev-web" href="formation.html#dev-web">Développement Web</a>
-                       <a id="marketing" href="formation.html#marketing">Marketing Digital</a>
-                       <a id="design" href="formation.html#design">Design Graphique</a>
-                       <a id="data" href="formation.html#data">Data Science</a>
-                       <a id="langues" href="formation.html#langues">Langues Étrangères</a>
-        </div>
-            </div>
-                <a href="annonces.html">annonces</a>
                 <a href="contact.html">Contact</a>
            
         </nav>
@@ -52,24 +35,6 @@
     <h4>Message</h4>
    <textarea name="msg" rows="5" placeholder="Votre message..."></textarea><br>
    <button type="submit" class="sub">Envoyer</button></form>
-
-
-  <div class="divbig">
-       <h1 class="title">formule de contact</h1><br>
-    <div class="contact">
-     
-<div class="div1">
-    <form action="#" method="post">
-     <label for="name">Name :</label><br>
-    <input class="name" type="text" id="name" placeholder=" votre nom" name="name" required><br>
-     <label for="email">email :</label><br>
-    <input type="email" class="name" placeholder="exemple@gmail.com" id="email" name="email" required><br>
-   <div class="gender"> <label for="male">male</label> <input   type="radio" name="GENDRE" id="male">
-    <label for="f">female</label> <input type="radio" name="GENDRE" id="f"></div>
-    <p>message</p>
-   <textarea name="msg" rows="5" placeholder="message" ></textarea><br>
-   <button type="submit" class="sub">submit</button>
-    </form>
 </div>
 
 <div id="popup" style="
@@ -103,15 +68,17 @@ window.onload = function () {
 
     closeBtn.addEventListener("click", function(){
         popup.style.display = "none";
-        
+         setTimeout(function(){
+        location.reload();
+    }, 2);
     });
 
 
 };
 </script>
 <div class="div2">
-<h2 id="titre">Coordonnées</h2>
-<section class="contact-info">
+<h2>Coordonnées</h2>
+
 <h3>Adresse</h3>
 <p>Hay Massira, Rue Ibn Sina N°47, Marrakech 40000, Maroc</p>
 
@@ -140,13 +107,12 @@ window.onload = function () {
 <p>Lundi – Vendredi : 08h00 – 17h00</p>
 <p>Samedi : 08h30 – 12h30</p>
 
-<section>
+
 
 </div>
     </div>
 </div>
-
-        <footer>
+    <footer>
         <div class="footer-content">
             <div class="footer-section">
                 <h3>Centre de Formation</h3>
@@ -169,7 +135,7 @@ window.onload = function () {
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2026 CentredeFormation  - Tous droits réservés</p>
+            <p>&copy; 2026 CentreForm - Tous droits réservés</p>
         </div>
     </footer>
 </body>
